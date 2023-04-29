@@ -1,0 +1,33 @@
+@import "../../../mixins/_responsive.scss";
+
+.slide-title, h3 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  svg {
+    margin-right: .5em;
+  }
+}
+
+.slide-title {
+  border-top: 3px dashed #ccc;
+  color: #dd0031;
+  font-size: 2em;
+  margin: 2em 0;
+  padding-top: 2em;
+  @include mobile {
+    font-size: 1em;
+  }
+  svg {
+    fill: #dd0031;
+  }
+}
+
+.favela {
+  h1 {
+    font-family: 'Great Vibes', cursive;
+  }
+  img {
+    filter: saturate(2) brightness(1.2);
+  }
+}

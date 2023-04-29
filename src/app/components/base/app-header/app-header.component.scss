@@ -1,0 +1,8 @@
+@import "../../../../mixins/_responsive";
+
+h1 {
+  font-size: 3em;
+  @include mobile {
+    font-size: 2em;
+  }
+}
