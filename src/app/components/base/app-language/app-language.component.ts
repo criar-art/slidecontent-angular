@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../../../services/language.service';
-import { Location } from '@angular/common';
+import { LocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'app-language',
@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
 export class AppLanguageComponent implements OnInit {
   languages = ['pt-BR', 'en-US', 'es-ES', 'fr-FR', 'ru-RU', 'zh-CN'];
 
-  constructor(private languageService: LanguageService, private location: Location) {
+  constructor(private languageService: LanguageService, private locationStrategy: LocationStrategy) {
   }
 
   ngOnInit(): void {
@@ -19,8 +19,8 @@ export class AppLanguageComponent implements OnInit {
   }
 
   isLanguageActive(language: string): boolean {
-    const path = this.location.path();
-    return path.startsWith(`/${language.slice(0, 2)}`);
+    const pathBase = this.locationStrategy.getBaseHref();
+    return pathBase.startsWith(`/${language.slice(0, 2)}`);
   }
 
   getUrl(language: string): string {
