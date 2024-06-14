@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt-BR" datatype="plaintext" original="ng2.template" target-language="zh-CH">
+    <body>
+      <trans-unit id="title" datatype="html">
+        <source>SlideContentAngular</source>
+        <target>幻灯片内容Angular</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/base/app-footer/app-footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/base/app-header/app-header.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source>Início</source>
+        <target>首页</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source>Informações</source>
+        <target>关于</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="version" datatype="html">
+        <source>Versão <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></source>
+        <target>版本 <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/base/app-version/app-version.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="to_left" datatype="html">
+        <source>Ir para a esquerda</source>
+        <target>向左</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="to_right" datatype="html">
+        <source>Ir para a direita</source>
+        <target>向右</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about" datatype="html">
+        <source>Um slide de conteúdo simples desenvolvido em Angular com botões de navegação e um timer na animação de transição</source>
+        <target>一个用Angular开发的简单内容幻灯片，带有导航按钮和过渡动画的定时器</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/about/about.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slide_infinity" datatype="html">
+        <source>Slide infinito</source>
+        <target>无限幻灯片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slide_no_navigation" datatype="html">
+        <source>Slide sem navegação</source>
+        <target>无导航幻灯片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slide_fix_time" datatype="html">
+        <source>Slide com duração de 10 segundos</source>
+        <target>持续10秒的幻灯片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

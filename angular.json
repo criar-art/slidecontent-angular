@@ -17,10 +17,22 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "pt",
+        "sourceLocale": "pt-BR",
         "locales": {
-          "en": {
-            "translation": "src/locale/messages.en.xlf"
+          "en-US": {
+            "translation": "src/locale/messages.en-US.xlf"
+          },
+          "es-ES": {
+            "translation": "src/locale/messages.es-ES.xlf"
+          },
+          "ru-RU": {
+            "translation": "src/locale/messages.ru-RU.xlf"
+          },
+          "zh-CN": {
+            "translation": "src/locale/messages.zh-CN.xlf"
+          },
+          "fr-FR": {
+            "translation": "src/locale/messages.fr-FR.xlf"
           }
         }
       },
@@ -70,14 +82,34 @@
               ],
               "outputHashing": "all"
             },
-            "pt": {
+            "pt-BR": {
               "localize": [
-                "pt"
+                "pt-BR"
               ]
             },
-            "en": {
+            "en-US": {
               "localize": [
-                "en"
+                "en-US"
+              ]
+            },
+            "es-ES": {
+              "localize": [
+                "es-ES"
+              ]
+            },
+            "ru-RU": {
+              "localize": [
+                "ru-RU"
+              ]
+            },
+            "zh-CN": {
+              "localize": [
+                "zh-CN"
+              ]
+            },
+            "fr-FR": {
+              "localize": [
+                "fr-FR"
               ]
             },
             "development": {
@@ -97,11 +129,23 @@
             "production": {
               "buildTarget": "slidecontent-angular:build:production"
             },
-            "pt": {
-              "buildTarget": "slidecontent-angular:build:development,pt"
+            "pt-BR": {
+              "buildTarget": "slidecontent-angular:build:development,pt-BR"
             },
-            "en": {
-              "buildTarget": "slidecontent-angular:build:development,en"
+            "en-US": {
+              "buildTarget": "slidecontent-angular:build:development,en-US"
+            },
+            "es-ES": {
+              "buildTarget": "slidecontent-angular:build:development,es-ES"
+            },
+            "ru-RU": {
+              "buildTarget": "slidecontent-angular:build:development,ru-RU"
+            },
+            "zh-CN": {
+              "buildTarget": "slidecontent-angular:build:development,zh-CN"
+            },
+            "fr-FR": {
+              "buildTarget": "slidecontent-angular:build:development,fr-FR"
             },
             "development": {
               "buildTarget": "slidecontent-angular:build:development"

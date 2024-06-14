@@ -1,16 +1,8 @@
 <section class="language">
-  <button (click)="changeLanguage('en')">English</button>
-  <button (click)="changeLanguage('pt')">Português</button>
-  <a href="/en/">
-    English
-  </a>
-  <a href="/pt/">
-    Português
-  </a>
-  <!-- @for (language of languages; track language) {
-  <button>
+  @for (language of languages; track language) {
+  <a href="/{{language}}/" (click)="changeLanguage(language)">
     <img [src]="getImageUrl(language)" [alt]="language" />
     {{language}}
-  </button>
-  } -->
+  </a>
+  }
 </section>

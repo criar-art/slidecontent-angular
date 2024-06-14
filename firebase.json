@@ -8,18 +8,34 @@
     ],
     "rewrites": [
       {
-        "source": "/en/**",
-        "destination": "/en/index.html"
+        "source": "/en-US/**",
+        "destination": "/en-US/index.html"
       },
       {
-        "source": "/pt/**",
-        "destination": "/pt/index.html"
+        "source": "/pt-BR/**",
+        "destination": "/pt-BR/index.html"
+      },
+      {
+        "source": "/es-ES/**",
+        "destination": "/es-ES/index.html"
+      },
+      {
+        "source": "/ru-RU/**",
+        "destination": "/ru-RU/index.html"
+      },
+      {
+        "source": "/zh-CN/**",
+        "destination": "/zh-CN/index.html"
+      },
+      {
+        "source": "/fr-FR/**",
+        "destination": "/fr-FR/index.html"
       }
     ],
     "redirects": [
       {
         "source": "/",
-        "destination": "/en",
+        "destination": "/pt-BR",
         "type": 301
       }
     ]

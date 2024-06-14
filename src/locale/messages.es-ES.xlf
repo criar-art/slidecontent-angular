@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="en">
+  <file source-language="pt-BR" datatype="plaintext" original="ng2.template" target-language="es-ES">
     <body>
       <trans-unit id="title" datatype="html">
         <source>SlideContentAngular</source>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="nav.home" datatype="html">
         <source>Início</source>
-        <target>Home</target>
+        <target>Inicio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
           <context context-type="linenumber">6</context>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="nav.about" datatype="html">
         <source>Informações</source>
-        <target>About</target>
+        <target>Información</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
           <context context-type="linenumber">18</context>
@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="version" datatype="html">
         <source>Versão <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></source>
-        <target>Version <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></target>
+        <target>Versión <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/base/app-version/app-version.component.html</context>
           <context context-type="linenumber">1</context>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="to_left" datatype="html">
         <source>Ir para a esquerda</source>
-        <target>Go to the left</target>
+        <target>Ir a la izquierda</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
           <context context-type="linenumber">7</context>
@@ -48,7 +48,7 @@
       </trans-unit>
       <trans-unit id="to_right" datatype="html">
         <source>Ir para a direita</source>
-        <target>Go to the right</target>
+        <target>Ir a la derecha</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
           <context context-type="linenumber">8</context>
@@ -56,7 +56,7 @@
       </trans-unit>
       <trans-unit id="about" datatype="html">
         <source>Um slide de conteúdo simples desenvolvido em Angular com botões de navegação e um timer na animação de transição</source>
-        <target>A simple content slide developed in Angular with navigation buttons and a timer in the transition animation</target>
+        <target>Una diapositiva de contenido simple desarrollada en Angular con botones de navegación y un temporizador en la animación de transición</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/about/about.component.html</context>
           <context context-type="linenumber">2</context>
@@ -64,7 +64,7 @@
       </trans-unit>
       <trans-unit id="slide_infinity" datatype="html">
         <source>Slide infinito</source>
-        <target>Infinite slide</target>
+        <target>Diapositiva infinita</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
           <context context-type="linenumber">11</context>
@@ -72,7 +72,7 @@
       </trans-unit>
       <trans-unit id="slide_no_navigation" datatype="html">
         <source>Slide sem navegação</source>
-        <target>Slide without navigation</target>
+        <target>Diapositiva sin navegación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
           <context context-type="linenumber">28</context>
@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="slide_fix_time" datatype="html">
         <source>Slide com duração de 10 segundos</source>
-        <target>Slide with a duration of 10 seconds</target>
+        <target>Diapositiva con una duración de 10 segundos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
           <context context-type="linenumber">43</context>
