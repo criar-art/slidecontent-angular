@@ -1,38 +1,50 @@
-nav {
+@import "../../../../mixins/_responsive";
+
+#nav {
   display: flex;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-}
-
-#nav a {
-  padding: 1rem 1.5rem 1rem 1rem;
-  margin: 0.5rem;
-  border: 2px solid #eee;
-  color: #2c3e50;
-  border-radius: 10px;
-  text-decoration: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  transition: .3s all;
-  box-shadow: 0 10px 10px rgba(0,0,0,.06), 0 0 0 2px #fff;
-
-  &.active {
-    background: #fff;
-    border: 2px solid #dd0031;
-    color: #dd0031;
-    svg { fill: #dd0031; }
+  @include mobile() {
+    flex-direction: column;
   }
 
-  svg {
-    width: 25px;
-    margin-right: 0.5rem;
-    outline: none;
-    fill: #2c3e50;
+  a {
+    padding: 1rem 1.5rem 1rem 1rem;
+    margin: 0.5rem;
+    border: 2px solid #eee;
+    color: #2c3e50;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: .3s all;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .06), 0 0 0 2px #fff;
+
+    @include mobile() {
+      width: calc(100% - 60px);
+    }
+
+    &.active {
+      background: #fff;
+      border: 2px solid #dd0031;
+      color: #dd0031;
+
+      svg {
+        fill: #dd0031;
+      }
+    }
+
+    svg {
+      width: 25px;
+      margin-right: 0.5rem;
+      outline: none;
+      fill: #2c3e50;
+    }
   }
 }
