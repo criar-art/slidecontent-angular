@@ -1,6 +1,6 @@
 <section class="language">
   @for (language of languages; track language) {
-  <a [href]="getUrl(language)" (click)="changeLanguage(language)">
+  <a [href]="getUrl(language)" (click)="changeLanguage(language)" [ngClass]="{ 'actived': isLanguageValid(language) }">
     <img [src]="getImageUrl(language)" [alt]="language" />
     {{language}}
   </a>
