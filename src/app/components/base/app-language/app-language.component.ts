@@ -33,8 +33,7 @@ export class AppLanguageComponent implements OnInit {
   }
 
   isLanguageValid(code: string): boolean {
-    const validLanguages = ['en', 'pt', 'es', 'ru', 'zh', 'fr'];
-    return validLanguages.includes(code);
+    return this.codeLanguage == code;
   }
 
   getUrl(language: string): string {
