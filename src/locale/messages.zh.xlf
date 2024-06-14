@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="title" datatype="html">
         <source>SlideContentAngular</source>
-        <target>幻灯片内容Angular</target>
+        <target>幻灯片内容视图</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/base/app-footer/app-footer.component.html</context>
           <context context-type="linenumber">7</context>
