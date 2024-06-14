@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="pt" datatype="plaintext" original="ng2.template" target-language="zh">
     <body>
@@ -6,11 +6,13 @@
         <source>SlideContentAngular</source>
         <target>幻灯片内容视图</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/base/app-footer/app-footer.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/base/app-footer/app-footer.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/base/app-header/app-header.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/base/app-header/app-header.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
@@ -18,7 +20,8 @@
         <source>Início</source>
         <target>首页</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/base/app-navigation/app-navigation.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
@@ -26,15 +29,17 @@
         <source>Informações</source>
         <target>关于</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/base/app-navigation/app-navigation.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/base/app-navigation/app-navigation.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="version" datatype="html">
-        <source>Versão <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></source>
-        <target>版本 <x id="INTERPOLATION" equiv-text="{{ appVersion }}"/></target>
+        <source>Versão <x id="INTERPOLATION" equiv-text="{{ appVersion }}" /></source>
+        <target>版本 <x id="INTERPOLATION" equiv-text="{{ appVersion }}" /></target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/base/app-version/app-version.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/base/app-version/app-version.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
@@ -42,7 +47,8 @@
         <source>Ir para a esquerda</source>
         <target>向左</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/slide-content/slide-content.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
@@ -50,12 +56,14 @@
         <source>Ir para a direita</source>
         <target>向右</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/slide-content/slide-content.component.html</context>
+          <context context-type="sourcefile">
+            src/app/components/slide-content/slide-content.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about" datatype="html">
-        <source>Um slide de conteúdo simples desenvolvido em Angular com botões de navegação e um timer na animação de transição</source>
+        <source>Um slide de conteúdo simples desenvolvido em Angular com botões de navegação e um
+          timer na animação de transição</source>
         <target>一个用Angular开发的简单内容幻灯片，带有导航按钮和过渡动画的定时器</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/about/about.component.html</context>
@@ -116,6 +124,22 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
           <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slide_border" datatype="html">
+        <source>Slide com borda</source>
+        <target>带边框的幻灯片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="slide_squared" datatype="html">
+        <source>Slide bordas quadradas</source>
+        <target>带方形边框的幻灯片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
     </body>
