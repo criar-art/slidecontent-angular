@@ -14,6 +14,15 @@
 body {
   margin: 0;
   padding: 0;
+  &:before,
+  &:after {
+    content: "";
+    display: flex;
+    height: 20px;
+    background: #dd0031;
+    background: linear-gradient(90deg, rgba(221,0,49,1) 0%, rgba(135,80,195,1) 100%);
+    box-shadow: 0 0 0 1px #fff, 0 0 20px rgba(0,0,0,.4);
+  }
 }
 
 b {
