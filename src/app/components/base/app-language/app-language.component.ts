@@ -16,6 +16,10 @@ export class AppLanguageComponent implements OnInit {
     this.languageService.setLanguage(lang);
   }
 
+  getUrl(language: string): string {
+    return `/${language.slice(0, 2)}/`;
+  }
+
   getImageUrl(language: string): string {
     return `assets/flags/${language}.svg`;
   }
