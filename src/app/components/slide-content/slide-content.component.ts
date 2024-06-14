@@ -11,6 +11,8 @@ export class SlideContentComponent implements OnInit {
 
   @Input('name') name: string;
   @Input('type') type: string;
+  @Input('squared') squared: boolean;
+  @Input('border') border: boolean;
   @Input('nav') nav: boolean;
   @Input('animation') animation: any;
 
