@@ -17,22 +17,22 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "pt-BR",
+        "sourceLocale": "pt",
         "locales": {
-          "en-US": {
-            "translation": "src/locale/messages.en-US.xlf"
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
           },
-          "es-ES": {
-            "translation": "src/locale/messages.es-ES.xlf"
+          "es": {
+            "translation": "src/locale/messages.es.xlf"
           },
-          "ru-RU": {
-            "translation": "src/locale/messages.ru-RU.xlf"
+          "ru": {
+            "translation": "src/locale/messages.ru.xlf"
           },
-          "zh-CN": {
-            "translation": "src/locale/messages.zh-CN.xlf"
+          "zh": {
+            "translation": "src/locale/messages.zh.xlf"
           },
-          "fr-FR": {
-            "translation": "src/locale/messages.fr-FR.xlf"
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf"
           }
         }
       },
@@ -82,34 +82,34 @@
               ],
               "outputHashing": "all"
             },
-            "pt-BR": {
+            "pt": {
               "localize": [
-                "pt-BR"
+                "pt"
               ]
             },
-            "en-US": {
+            "en": {
               "localize": [
-                "en-US"
+                "en"
               ]
             },
-            "es-ES": {
+            "es": {
               "localize": [
-                "es-ES"
+                "es"
               ]
             },
-            "ru-RU": {
+            "ru": {
               "localize": [
-                "ru-RU"
+                "ru"
               ]
             },
-            "zh-CN": {
+            "zh": {
               "localize": [
-                "zh-CN"
+                "zh"
               ]
             },
-            "fr-FR": {
+            "fr": {
               "localize": [
-                "fr-FR"
+                "fr"
               ]
             },
             "development": {
@@ -129,23 +129,23 @@
             "production": {
               "buildTarget": "slidecontent-angular:build:production"
             },
-            "pt-BR": {
-              "buildTarget": "slidecontent-angular:build:development,pt-BR"
+            "pt": {
+              "buildTarget": "slidecontent-angular:build:development,pt"
             },
-            "en-US": {
-              "buildTarget": "slidecontent-angular:build:development,en-US"
+            "en": {
+              "buildTarget": "slidecontent-angular:build:development,en"
             },
-            "es-ES": {
-              "buildTarget": "slidecontent-angular:build:development,es-ES"
+            "es": {
+              "buildTarget": "slidecontent-angular:build:development,es"
             },
-            "ru-RU": {
-              "buildTarget": "slidecontent-angular:build:development,ru-RU"
+            "ru": {
+              "buildTarget": "slidecontent-angular:build:development,ru"
             },
-            "zh-CN": {
-              "buildTarget": "slidecontent-angular:build:development,zh-CN"
+            "zh": {
+              "buildTarget": "slidecontent-angular:build:development,zh"
             },
-            "fr-FR": {
-              "buildTarget": "slidecontent-angular:build:development,fr-FR"
+            "fr": {
+              "buildTarget": "slidecontent-angular:build:development,fr"
             },
             "development": {
               "buildTarget": "slidecontent-angular:build:development"
