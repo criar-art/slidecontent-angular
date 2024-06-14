@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="title" datatype="html">
         <source>SlideContentAngular</source>
@@ -62,18 +62,48 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="god_faith" datatype="html">
+        <source>Fé em Deus</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="city" datatype="html">
+        <source>Ermelino Matarazzo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="slide_no_navigation" datatype="html">
         <source>Slide sem navegação</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="slide_fix_time" datatype="html">
         <source>Slide com duração de 10 segundos</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.html</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
     </body>

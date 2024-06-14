@@ -33,7 +33,7 @@ export class AppLanguageComponent implements OnInit {
   }
 
   isLanguageValid(code: string): boolean {
-    return this.codeLanguage == code;
+    return this.codeLanguage == code.slice(0, 2);
   }
 
   getUrl(language: string): string {

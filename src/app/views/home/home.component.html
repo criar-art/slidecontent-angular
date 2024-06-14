@@ -11,9 +11,10 @@
     <span i18n="@@slide_infinity">Slide infinito</span>
   </h2>
   <app-slide-content name="Exemplo 1" type="infinite" [nav]="true" [animation]="{ 'disabled': true }">
-    <app-slide-item class="favela" [actived]="true" i18n-title="@@god_faith" img="assets/faveladascriancas.jpg"
-      url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
-    <app-slide-item i18n-title="@@city" img="assets/ermelino.jpg"
+    <app-slide-item class="favela" [actived]="true" i18n-title="@@god_faith" title="Fé em Deus"
+      img="assets/faveladascriancas.jpg" url="https://github.com/lucasferreiralimax/slidecontent-angular"
+      target="_blank"></app-slide-item>
+    <app-slide-item i18n-title="@@city" title="Ermelino Matarazzo" img="assets/ermelino.jpg"
       url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
   </app-slide-content>
 </div>
@@ -28,9 +29,9 @@
     <span i18n="@@slide_no_navigation">Slide sem navegação</span>
   </h2>
   <app-slide-content name="Exemplo 2" [nav]="false">
-    <app-slide-item class="favela" i18n-title="@@god_faith" img="assets/faveladascriancas.jpg"
+    <app-slide-item class="favela" i18n-title="@@god_faith" title="Fé em Deus" img="assets/faveladascriancas.jpg"
       url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
-    <app-slide-item [actived]="true" i18n-title="@@city" img="assets/ermelino.jpg"
+    <app-slide-item [actived]="true" i18n-title="@@city" title="Ermelino Matarazzo" img="assets/ermelino.jpg"
       url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
   </app-slide-content>
 </div>
@@ -43,9 +44,9 @@
     <span i18n="@@slide_fix_time">Slide com duração de 10 segundos</span>
   </h2>
   <app-slide-content name="Exemplo 3" type="simple" [nav]="true" [animation]="{ direction: 'prev', time: 10000 }">
-    <app-slide-item class="favela" i18n-title="@@god_faith" img="assets/faveladascriancas.jpg"
+    <app-slide-item class="favela" i18n-title="@@god_faith" title="Fé em Deus" img="assets/faveladascriancas.jpg"
       url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
-    <app-slide-item [actived]="true" i18n-title="@@city" img="assets/ermelino.jpg"
+    <app-slide-item [actived]="true" i18n-title="@@city" title="Ermelino Matarazzo" img="assets/ermelino.jpg"
       url="https://github.com/lucasferreiralimax/slidecontent-angular" target="_blank"></app-slide-item>
   </app-slide-content>
 </div>
