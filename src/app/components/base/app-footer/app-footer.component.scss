@@ -10,6 +10,8 @@
     justify-content: center;
     text-decoration: none;
     flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
     @include mobile() {
       font-size: 1em;
     }

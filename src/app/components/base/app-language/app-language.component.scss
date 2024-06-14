@@ -1,27 +1,33 @@
 .language {
-  margin-bottom: 2rem;
+  padding: 2rem 0;
   a {
     flex: 1;
     margin: 0.5rem;
     cursor: pointer;
     border: 0;
     background: #eee;
-    padding: 0.5rem;
+    padding: 0.2rem;
     border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 0;
     text-decoration: none;
     font-size: 0;
     display: inline-flex;
+    border: 2px solid transparent;
+    transition: .3s all;
+    overflow: hidden;
 
-    &.actived {
+    &.actived,
+    &:hover {
       color: #fff;
-      background: #2c3e50;
+      background: #fff;
+      border: 2px solid #2c3e50;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 2px 5px rgba(0, 0, 0, 0.2);
+      transform: scale(1.2);
     }
   }
 
   img {
-    width: 20px;
+    width: 30px;
     pointer-events: none;
   }
 }

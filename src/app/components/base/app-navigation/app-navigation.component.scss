@@ -10,7 +10,7 @@ nav {
 #nav a {
   padding: 1rem 1.5rem 1rem 1rem;
   margin: 0.5rem;
-  background: #eee;
+  border: 2px solid #eee;
   color: #2c3e50;
   border-radius: 10px;
   text-decoration: none;
@@ -18,20 +18,21 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  font-weight: bold;
+  transition: .3s all;
+  box-shadow: 0 10px 10px rgba(0,0,0,.06), 0 0 0 2px #fff;
 
-#nav a svg {
-  width: 25px;
-  margin-right: 0.5rem;
-  outline: none;
-  fill: #2c3e50;
-}
+  &.active {
+    background: #fff;
+    border: 2px solid #dd0031;
+    color: #dd0031;
+    svg { fill: #dd0031; }
+  }
 
-#nav a.active {
-  background: #dd0031;
-  color: #fff;
-}
-
-#nav a.active svg {
-  fill: #fff;
+  svg {
+    width: 25px;
+    margin-right: 0.5rem;
+    outline: none;
+    fill: #2c3e50;
+  }
 }
