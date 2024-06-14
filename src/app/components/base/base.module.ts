@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { AppLanguageComponent } from './app-language/app-language.component';
+import { AppLogoComponent } from './app-logo/app-logo.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppVersionComponent } from './app-version/app-version.component';
 
@@ -13,6 +14,7 @@ import { AppVersionComponent } from './app-version/app-version.component';
     AppHeaderComponent,
     AppNavigationComponent,
     AppLanguageComponent,
+    AppLogoComponent,
     AppFooterComponent,
     AppVersionComponent
   ],
@@ -20,6 +22,7 @@ import { AppVersionComponent } from './app-version/app-version.component';
     AppHeaderComponent,
     AppNavigationComponent,
     AppLanguageComponent,
+    AppLogoComponent,
     AppFooterComponent,
     AppVersionComponent
   ],
