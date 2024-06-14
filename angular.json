@@ -16,6 +16,14 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "pt",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,7 +31,12 @@
             "outputPath": "dist/slidecontent-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "localize": true,
+            "i18nMissingTranslation": "error",
+            "polyfills": [
+              "src/polyfills.ts",
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -57,6 +70,16 @@
               ],
               "outputHashing": "all"
             },
+            "pt": {
+              "localize": [
+                "pt"
+              ]
+            },
+            "en": {
+              "localize": [
+                "en"
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -74,6 +97,12 @@
             "production": {
               "buildTarget": "slidecontent-angular:build:production"
             },
+            "pt": {
+              "buildTarget": "slidecontent-angular:build:development,pt"
+            },
+            "en": {
+              "buildTarget": "slidecontent-angular:build:development,en"
+            },
             "development": {
               "buildTarget": "slidecontent-angular:build:development"
             }
@@ -90,7 +119,10 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts",
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
