@@ -34,15 +34,6 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="version" datatype="html">
-        <source>Versão <x id="INTERPOLATION" equiv-text="{{ appVersion }}" /></source>
-        <target>Versión <x id="INTERPOLATION" equiv-text="{{ appVersion }}" /></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">
-            src/app/components/base/app-version/app-version.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="to_left" datatype="html">
         <source>Ir para a esquerda</source>
         <target>Ir a la izquierda</target>
