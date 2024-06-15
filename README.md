@@ -1,6 +1,6 @@
 # SlideContentAngular
 
-[Live preview Project Online angular-slidecontent.web.app](https://angular-slidecontent.web.app).
+[Live preview Project Online [angular-slidecontent.web.app](https://slidecontent-angularjs.web.app)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4
