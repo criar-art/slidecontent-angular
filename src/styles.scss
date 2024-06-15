@@ -11,9 +11,14 @@
   src: url("assets/webfonts/fa-solid-900.woff2") format("woff2"), url("assets/webfonts/fa-solid-900.ttf") format("truetype");
 }
 
+html {
+  background: var(--primary);
+}
+
 body {
   margin: 0;
   padding: 0;
+  background: #fff;
   &:before,
   &:after {
     content: "";
