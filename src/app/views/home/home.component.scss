@@ -26,7 +26,7 @@ h3 {
 
 .slide-title {
   padding: 2rem 0;
-  color: #dd0031;
+  color: var(--primary);
   font-size: 2em;
 
   @include mobile {
@@ -34,7 +34,7 @@ h3 {
   }
 
   svg {
-    fill: #dd0031;
+    fill: var(--primary);
   }
 }
 

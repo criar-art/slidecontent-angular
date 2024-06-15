@@ -15,7 +15,7 @@
     padding: 1rem 1.5rem 1rem 1rem;
     margin: 0.5rem;
     border: 2px solid #eee;
-    color: #2c3e50;
+    color: var(--main-color);
     border-radius: 10px;
     text-decoration: none;
     width: 100%;
@@ -32,11 +32,11 @@
 
     &.active {
       background: #fff;
-      border: 2px solid #dd0031;
-      color: #dd0031;
+      border: 2px solid var(--primary);
+      color: var(--primary);
 
       svg {
-        fill: #dd0031;
+        fill: var(--primary);
       }
     }
 
@@ -44,7 +44,7 @@
       width: 25px;
       margin-right: 0.5rem;
       outline: none;
-      fill: #2c3e50;
+      fill: var(--main-color);
     }
   }
 }

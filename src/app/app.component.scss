@@ -1,7 +1,7 @@
 .app {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: #2c3e50;
+  color: var(--main-color);
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;
   min-height: calc(100vh - 40px);
