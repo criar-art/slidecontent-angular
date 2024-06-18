@@ -1,86 +1,91 @@
-import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy, ViewChild, ElementRef, Input } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
+import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'app-slide-content',
   templateUrl: './slide-content.component.html',
   styleUrls: ['./slide-content.component.scss']
 })
-export class SlideContentComponent implements OnInit {
+export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  @ViewChild('slideWrapper') content:ElementRef;
+  @ViewChild('slideWrapper', { static: true }) content: ElementRef<HTMLDivElement>;
 
-  @Input('name') name: string;
-  @Input('type') type: string;
-  @Input('squared') squared: boolean;
-  @Input('border') border: boolean;
-  @Input('nav') nav: boolean;
-  @Input('animation') animation: any;
+  @Input() name: string;
+  @Input() type: string;
+  @Input() squared: boolean;
+  @Input() border: boolean;
+  @Input() nav: boolean;
+  @Input() animation: any;
+
+  private slideAnimationInitialSub: Subscription;
+  private slideAnimationOptionsSub: Subscription;
 
   constructor() { }
 
-  slideAnimation() {
-    let slideAnimationInitial = setInterval(() => {
-        this.nextHandler()
-      }, 6000);
+  ngOnInit() {}
 
-      slideAnimationInitial
+  ngAfterViewInit() {
+    this.startSlideAnimation();
+  }
 
-      if(this.animation) {
-        clearInterval(slideAnimationInitial)
-        let slideAnimationOptions = setInterval(() => {
-          if(this.animation.direction == "prev") {
-            this.prevHandler()
-          } else {
-            this.nextHandler()
-          }
-        }, this.animation.time);
+  ngOnDestroy() {
+    this.stopSlideAnimation();
+  }
 
-        if(this.animation.disabled) {
-          clearInterval(slideAnimationOptions)
-        } else {
-          slideAnimationOptions
-        }
+  startSlideAnimation() {
+    this.slideAnimationInitialSub = interval(6000)
+      .pipe(takeWhile(() => !this.animation))
+      .subscribe(() => this.nextHandler());
+
+    if (this.animation) {
+      this.slideAnimationOptionsSub = interval(this.animation.time)
+        .subscribe(() => {
+          this.animation.direction === 'prev' ? this.prevHandler() : this.nextHandler();
+        });
+
+      if (this.animation.disabled) {
+        this.stopSlideAnimation();
       }
+    }
+  }
+
+  stopSlideAnimation() {
+    if (this.slideAnimationInitialSub) {
+      this.slideAnimationInitialSub.unsubscribe();
+    }
+    if (this.slideAnimationOptionsSub) {
+      this.slideAnimationOptionsSub.unsubscribe();
+    }
   }
 
   prevHandler() {
-    let slides = this.content.nativeElement.querySelectorAll("app-slide-item"),
-        slides__item = this.content.nativeElement.querySelectorAll("app-slide-item .slide-item")
+    const slides = Array.from(this.content.nativeElement.querySelectorAll('app-slide-item .slide-item')) as HTMLElement[];
+    const activeSlide = slides.find(slide => slide.classList.contains('actived'));
 
-    for(let item of slides) {
-      if(item.querySelector('.slide-item').classList.contains("actived")) {
-        if(item.previousElementSibling) {
-          item.querySelector('.slide-item').classList.remove("actived")
-          item.previousElementSibling.querySelector('.slide-item').classList.add("actived")
-        } else {
-          item.querySelector('.slide-item').classList.remove("actived")
-          slides__item[slides.length - 1].classList.add("actived")
-        }
-        break;
+    if (activeSlide) {
+      activeSlide.classList.remove('actived');
+      const prevSlide = activeSlide.parentElement?.previousElementSibling?.querySelector('.slide-item') as HTMLElement;
+      if (prevSlide) {
+        prevSlide.classList.add('actived');
+      } else {
+        slides[slides.length - 1].classList.add('actived');
       }
     }
   }
 
   nextHandler() {
-    let slides = this.content.nativeElement.querySelectorAll("app-slide-item"),
-        slides__item = this.content.nativeElement.querySelectorAll("app-slide-item .slide-item")
+    const slides = Array.from(this.content.nativeElement.querySelectorAll('app-slide-item .slide-item')) as HTMLElement[];
+    const activeSlide = slides.find(slide => slide.classList.contains('actived'));
 
-    for(let item of slides) {
-      if(item.querySelector('.slide-item').classList.contains("actived")) {
-        if(item.nextElementSibling) {
-          item.querySelector('.slide-item').classList.remove("actived")
-          item.nextElementSibling.querySelector('.slide-item').classList.add("actived")
-          break;
-        } else {
-          item.querySelector('.slide-item').classList.remove("actived")
-          slides__item[0].classList.add("actived")
-        }
+    if (activeSlide) {
+      activeSlide.classList.remove('actived');
+      const nextSlide = activeSlide.parentElement?.nextElementSibling?.querySelector('.slide-item') as HTMLElement;
+      if (nextSlide) {
+        nextSlide.classList.add('actived');
+      } else {
+        slides[0].classList.add('actived');
       }
     }
   }
-
-  ngOnInit() {
-    this.slideAnimation()
-  }
-
 }
