@@ -15,9 +15,6 @@ section {
     @include mobile() {
       flex-direction: column;
     }
-    h2 {
-      margin-top: 1rem;
-    }
   }
   .example {
     display: flex;
