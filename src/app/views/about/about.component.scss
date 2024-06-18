@@ -10,35 +10,40 @@ section {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    @include mobile() {
+    align-items: stretch;
+
+    @include mobile {
       flex-direction: column;
     }
   }
+
   .example {
     display: flex;
+    flex: 1;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
     padding: 1rem 2rem 2rem;
     border-radius: 10px;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0.5rem 0;
     text-decoration: none;
     color: var(--main-color);
     border: 2px solid #eee;
-    width: 90%;
     font-weight: bold;
+    box-shadow:
+      0 10px 10px rgb(0 0 0 / 6%),
+      0 0 0 2px #fff;
     transition: 0.3s all;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.06), 0 0 0 2px #fff;
-    transition: .3s all;
     background: #fff;
+
     &:hover {
       transform: scale(1.1);
     }
-  }
-  .example img {
-    height: 80px;
-    margin-bottom: 10px;
+
+    img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
   }
 }
