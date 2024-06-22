@@ -8,6 +8,12 @@
   overflow: hidden;
   position: relative;
   width: calc(100% - 20px);
+  background: #fff;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
   &.border {
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #222, 0 5px 20px rgba(0, 0, 0, 0.5);
   }
@@ -98,7 +104,7 @@
     transform: translateX(-100%);
 
     &.active {
-      background-color: rgba(#444, .5);
+      background-color: rgba(#444, 0.5);
       cursor: default;
     }
   }

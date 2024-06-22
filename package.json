@@ -18,8 +18,10 @@
     "@angular/platform-browser": "^18.0.4",
     "@angular/platform-browser-dynamic": "^18.0.4",
     "@angular/router": "^18.0.4",
+    "hammerjs": "^2.0.8",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.3",
+    "uuid": "^10.0.0",
     "zone.js": "~0.14.7"
   },
   "devDependencies": {
@@ -27,8 +29,10 @@
     "@angular/cli": "^18.0.5",
     "@angular/compiler-cli": "^18.0.4",
     "@angular/localize": "^18.0.4",
+    "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.4",
     "@types/node": "^20.14.7",
+    "@types/uuid": "^10.0.0",
     "jasmine-core": "~5.1.2",
     "karma": "~6.4.3",
     "karma-chrome-launcher": "~3.2.0",
