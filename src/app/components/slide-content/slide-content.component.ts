@@ -18,6 +18,9 @@ export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() nav: boolean;
   @Input() animation: any;
 
+  slides: HTMLElement[] = [];
+  activeSlideIndex: number = 0;
+
   private slideAnimationInitialSub: Subscription;
   private slideAnimationOptionsSub: Subscription;
 
@@ -26,6 +29,15 @@ export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit() {}
 
   ngAfterViewInit() {
+    this.slides = Array.from(this.content.nativeElement.querySelectorAll('app-slide-item .slide-item')) as HTMLElement[];
+    if (this.slides.length) {
+      const initialActiveSlide = this.slides.findIndex(slide => slide.classList.contains('actived'));
+      if (initialActiveSlide !== -1) {
+        this.activeSlideIndex = initialActiveSlide;
+      } else {
+        this.slides[0].classList.add('actived');
+      }
+    }
     this.startSlideAnimation();
   }
 
@@ -60,32 +72,26 @@ export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   prevHandler() {
-    const slides = Array.from(this.content.nativeElement.querySelectorAll('app-slide-item .slide-item')) as HTMLElement[];
-    const activeSlide = slides.find(slide => slide.classList.contains('actived'));
-
-    if (activeSlide) {
-      activeSlide.classList.remove('actived');
-      const prevSlide = activeSlide.parentElement?.previousElementSibling?.querySelector('.slide-item') as HTMLElement;
-      if (prevSlide) {
-        prevSlide.classList.add('actived');
-      } else {
-        slides[slides.length - 1].classList.add('actived');
-      }
+    if (this.slides.length) {
+      this.slides[this.activeSlideIndex].classList.remove('actived');
+      this.activeSlideIndex = (this.activeSlideIndex - 1 + this.slides.length) % this.slides.length;
+      this.slides[this.activeSlideIndex].classList.add('actived');
     }
   }
 
   nextHandler() {
-    const slides = Array.from(this.content.nativeElement.querySelectorAll('app-slide-item .slide-item')) as HTMLElement[];
-    const activeSlide = slides.find(slide => slide.classList.contains('actived'));
+    if (this.slides.length) {
+      this.slides[this.activeSlideIndex].classList.remove('actived');
+      this.activeSlideIndex = (this.activeSlideIndex + 1) % this.slides.length;
+      this.slides[this.activeSlideIndex].classList.add('actived');
+    }
+  }
 
-    if (activeSlide) {
-      activeSlide.classList.remove('actived');
-      const nextSlide = activeSlide.parentElement?.nextElementSibling?.querySelector('.slide-item') as HTMLElement;
-      if (nextSlide) {
-        nextSlide.classList.add('actived');
-      } else {
-        slides[0].classList.add('actived');
-      }
+  bulletHandler(index: number) {
+    if (this.slides.length) {
+      this.slides[this.activeSlideIndex].classList.remove('actived');
+      this.activeSlideIndex = index;
+      this.slides[this.activeSlideIndex].classList.add('actived');
     }
   }
 }
