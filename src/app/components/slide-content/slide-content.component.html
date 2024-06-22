@@ -1,8 +1,10 @@
 <section
   class="slide-content"
   [ngClass]="{ squared: squared, border: border, type }"
+  (swipeleft)="nextHandler()"
+  (swiperight)="prevHandler()"
 >
-  <div class="slide-contents" #slideWrapper>
+  <div class="slide-contents" #slideWrapper (click)="openUrl($event)">
     <ng-content></ng-content>
   </div>
   @if (nav) {
