@@ -1,9 +1,11 @@
-<article class="slide-item" [ngClass]="{ 'actived' : actived }">
-  <a [href]="url" [target]="target">
-    <h1>{{ title }}</h1>
-    <img
-      [alt]="title"
-      [src]="img"
-    />
-  </a>
+<article
+  class="slide-item"
+  [ngClass]="{ actived: actived }"
+  [attr.data-url]="url"
+  role="tabpanel"
+  [attr.aria-labelledby]="slideId"
+  [attr.aria-hidden]="!actived"
+>
+  <h1 [id]="slideId">{{ title }}</h1>
+  <img [alt]="title" [src]="img" />
 </article>
