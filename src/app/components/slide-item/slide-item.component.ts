@@ -12,6 +12,7 @@ export class SlideItemComponent implements OnInit {
   @Input("img") img: string;
   @Input("url") url: string;
   @Input("target") target: string;
+  @Input("titleHidden") titleHidden: boolean;
   slideId: string;
 
   constructor() {

@@ -92,6 +92,7 @@
   position: absolute;
   bottom: 20px;
   left: 50%;
+  transform: translateX(-50%);
 
   .bullet {
     width: 30px;
@@ -101,7 +102,6 @@
     margin: 0 5px;
     border: 2px solid #fff;
     cursor: pointer;
-    transform: translateX(-100%);
 
     &.active {
       background-color: rgba(#444, 0.5);
