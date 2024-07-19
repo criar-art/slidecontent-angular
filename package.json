@@ -22,7 +22,7 @@
     "rxjs": "~7.8.1",
     "tslib": "^2.6.3",
     "uuid": "^10.0.0",
-    "zone.js": "~0.14.7"
+    "zone.js": "^0.14.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.1.1",
@@ -31,7 +31,7 @@
     "@angular/localize": "^18.1.1",
     "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.14.11",
     "@types/uuid": "^10.0.0",
     "jasmine-core": "~5.1.2",
     "karma": "~6.4.3",
@@ -39,6 +39,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.5"
+    "typescript": "^5.5.3"
   }
 }
