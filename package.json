@@ -31,7 +31,7 @@
     "@angular/localize": "^18.1.2",
     "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^20.14.11",
+    "@types/node": "^20.14.12",
     "@types/uuid": "^10.0.0",
     "jasmine-core": "^5.2.0",
     "karma": "~6.4.3",
@@ -39,6 +39,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }
