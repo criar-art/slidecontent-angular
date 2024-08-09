@@ -22,7 +22,7 @@
     "rxjs": "~7.8.1",
     "tslib": "^2.6.3",
     "uuid": "^10.0.0",
-    "zone.js": "^0.14.8"
+    "zone.js": "^0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.1.4",
@@ -31,7 +31,7 @@
     "@angular/localize": "^18.1.4",
     "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "@types/uuid": "^10.0.0",
     "jasmine-core": "^5.2.0",
     "karma": "~6.4.3",
