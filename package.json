@@ -31,7 +31,7 @@
     "@angular/localize": "^18.2.0",
     "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^22.4.0",
+    "@types/node": "^22.4.1",
     "@types/uuid": "^10.0.0",
     "jasmine-core": "^5.2.0",
     "karma": "~6.4.3",
