@@ -8,7 +8,7 @@
     "build:module": "ng build slidecontent-angular",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "cd dist/slidecontent-angular && npm run publish"
+    "publish": "cd dist/slidecontent-angular && npm publish"
   },
   "private": true,
   "dependencies": {
