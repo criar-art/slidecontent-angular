@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "slidecontent-angular": {
+    "slidecontent-angular-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -127,28 +127,28 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "slidecontent-angular:build:production"
+              "buildTarget": "slidecontent-angular-app:build:production"
             },
             "pt": {
-              "buildTarget": "slidecontent-angular:build:development,pt"
+              "buildTarget": "slidecontent-angular-app:build:development,pt"
             },
             "en": {
-              "buildTarget": "slidecontent-angular:build:development,en"
+              "buildTarget": "slidecontent-angular-app:build:development,en"
             },
             "es": {
-              "buildTarget": "slidecontent-angular:build:development,es"
+              "buildTarget": "slidecontent-angular-app:build:development,es"
             },
             "ru": {
-              "buildTarget": "slidecontent-angular:build:development,ru"
+              "buildTarget": "slidecontent-angular-app:build:development,ru"
             },
             "zh": {
-              "buildTarget": "slidecontent-angular:build:development,zh"
+              "buildTarget": "slidecontent-angular-app:build:development,zh"
             },
             "fr": {
-              "buildTarget": "slidecontent-angular:build:development,fr"
+              "buildTarget": "slidecontent-angular-app:build:development,fr"
             },
             "development": {
-              "buildTarget": "slidecontent-angular:build:development"
+              "buildTarget": "slidecontent-angular-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -156,7 +156,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "slidecontent-angular:build"
+            "buildTarget": "slidecontent-angular-app:build"
           }
         },
         "test": {
@@ -178,6 +178,39 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "slidecontent-angular": {
+      "projectType": "library",
+      "root": "projects/slidecontent-angular",
+      "sourceRoot": "projects/slidecontent-angular/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/slidecontent-angular/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/slidecontent-angular/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/slidecontent-angular/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/slidecontent-angular/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }

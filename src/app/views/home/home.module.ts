@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { SlideModule } from '../../modules/slide/slide.module';
+import { SlideModule } from '../../../../projects/slidecontent-angular/src/public-api';
 
 @NgModule({
   declarations: [

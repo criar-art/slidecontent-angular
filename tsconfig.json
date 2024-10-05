@@ -18,6 +18,11 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
+    "paths": {
+      "slidecontent-angular": [
+        "./dist/slidecontent-angular"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "es2020",
