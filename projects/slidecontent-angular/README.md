@@ -35,18 +35,42 @@ After installation, you'll need to import the `SlideContentAngular` into your An
 
 2. **Using `SlideContent` and `SlideItem` Components:**
 
-   Once the module is imported, you can use the `app-slide-content` and `app-slide-item` components in your templates. Below is an example:
+   Once the module is imported, you can use the `slide-content` and `slide-item` components in your templates. Below is an example:
 
    ```html
-   <slide-content name="Example 1" type="infinite" [nav]="true" [animation]="{ disabled: true }">
-     <slide-item class="favela" [actived]="true" i18n-title="@@god_faith" title="Faith in God" img="assets/faveladascriancas.jpg" url="https://github.com/criar-art/slidecontent-angular" target="_blank"></app-slide-item>
-
-     <slide-item i18n-title="@@city" title="Ermelino Matarazzo" img="assets/ermelino.jpg" url="https://github.com/criar-art/slidecontent-angular" target="_blank"></app-slide-item>
-
-     <slide-item [titleHidden]="true" title="Modern Office" img="assets/new-york.jpg"></app-slide-item>
-
-     <slide-item [titleHidden]="true" title="Moto Life" img="assets/motorcycle.jpg"></app-slide-item>
-   </app-slide-content>
+   <slide-content
+    name="Example 1"
+    type="infinite"
+    [nav]="true"
+    [animation]="{ disabled: true }"
+   >
+     <slide-item
+      class="favela"
+      [actived]="true"
+      i18n-title="@@god_faith"
+      title="Faith in God"
+      img="assets/faveladascriancas.jpg"
+      url="https://github.com/criar-art/slidecontent-angular"
+      target="_blank"
+    />
+     <slide-item
+      i18n-title="@@city"
+      title="Ermelino Matarazzo"
+      img="assets/ermelino.jpg"
+      url="https://github.com/criar-art/slidecontent-angular"
+      target="_blank"
+    />
+     <slide-item
+      [titleHidden]="true"
+      title="Modern Office"
+      img="assets/new-york.jpg"
+    />
+     <slide-item
+      [titleHidden]="true"
+      title="Moto Life"
+      img="assets/motorcycle.jpg"
+    />
+   </slide-content>
    ```
 
 ### Explanation:
