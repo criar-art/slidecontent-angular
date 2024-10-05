@@ -3,5 +3,6 @@
   "dest": "../../dist/slidecontent-angular",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["hammerjs"]
 }

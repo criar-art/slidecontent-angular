@@ -84,13 +84,13 @@ export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
     this.hammer.on("panend", (event) => this.onPanEnd(event));
   }
 
-  onPanStart(event: HammerInput) {
+  onPanStart(event: any) {
     this.isDragging = true;
     this.startPanX = event.center.x; // Inicia a posição X do pan
     this.content.nativeElement.style.cursor = "grabbing";
   }
 
-  onPanMove(event: HammerInput) {
+  onPanMove(event: any) {
     if (!this.isDragging) {
       return;
     }
@@ -113,7 +113,7 @@ export class SlideContentComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  onPanEnd(event: HammerInput) {
+  onPanEnd(event: any) {
     this.content.nativeElement.style.cursor = "grab";
     setTimeout(() => {
       this.isDragging = false;
