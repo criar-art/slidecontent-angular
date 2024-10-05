@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve --configuration=pt",
     "build": "ng build",
+    "build:module": "ng build slidecontent-angular",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
