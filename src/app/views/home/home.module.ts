@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { BaseModule } from "src/app/components/base/base.module";
 
 import { HomeComponent } from "./home.component";
 
@@ -9,6 +10,6 @@ import { SlideContentAngular } from "slidecontent-angular";
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [SlideContentAngular, CommonModule, HomeRoutingModule],
+  imports: [SlideContentAngular, CommonModule, HomeRoutingModule, BaseModule],
 })
 export class HomeModule {}

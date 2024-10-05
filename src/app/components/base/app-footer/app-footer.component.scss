@@ -20,3 +20,13 @@
     margin: .5em;
   }
 }
+
+.social-links {
+  max-width: 290px;
+  display: flex;
+  margin: 0 auto 2rem;
+  ::ng-deep .tech-container {
+    width: 90px !important;
+    height: 90px;
+  }
+}

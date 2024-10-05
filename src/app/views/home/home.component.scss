@@ -6,7 +6,6 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, .06);
 
   &:first-of-type {
-    margin-top: 2rem;
     padding-top: 0;
     border-top: 1px solid #eee;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .06), 0 -5px 15px rgba(0, 0, 0, .02);
@@ -45,5 +44,16 @@ h3 {
 
   img {
     filter: saturate(2) brightness(1.2);
+  }
+}
+
+.social-links {
+  max-width: 320px;
+  display: flex;
+  margin: 1rem auto;
+
+  .tech-container {
+    width: 90px !important;
+    height: 90px;
   }
 }

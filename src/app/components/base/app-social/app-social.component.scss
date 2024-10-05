@@ -1,0 +1,10 @@
+.social-links {
+  max-width: 290px;
+  display: flex;
+  margin: 1rem auto;
+  gap: .4rem;
+  ::ng-deep .tech-container {
+    width: 90px !important;
+    height: 90px;
+  }
+}
