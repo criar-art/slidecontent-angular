@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from "@angular/core";
 import * as uuid from "uuid";
 
 @Component({
-  selector: "app-slide-item",
+  selector: "slide-item",
   templateUrl: "./slide-item.component.html",
   styleUrls: ["./slide-item.component.scss"],
 })
-export class SlideItemComponent implements OnInit {
+export class SlideItem implements OnInit {
   @Input("actived") actived: boolean;
   @Input("title") title: string;
   @Input("img") img: string;
