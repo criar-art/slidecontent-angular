@@ -9,7 +9,7 @@ import {
 } from "@angular/core";
 import { interval, Subscription } from "rxjs";
 import { takeWhile } from "rxjs/operators";
-import * as Hammer from "hammerjs";
+import Hammer from 'hammerjs';
 
 @Component({
   selector: "slide-content",
