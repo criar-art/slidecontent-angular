@@ -45,9 +45,7 @@ export class SlideContent implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     setTimeout(() => {
       this.slides = Array.from(
-        this.content.nativeElement.querySelectorAll(
-          "app-slide-item .slide-item"
-        )
+        this.content.nativeElement.querySelectorAll("slide-item .slide-item")
       ) as HTMLElement[];
       if (this.slides.length) {
         const initialActiveSlide = this.slides.findIndex((slide) =>

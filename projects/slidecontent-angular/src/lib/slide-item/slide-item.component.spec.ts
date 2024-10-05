@@ -1,25 +1,24 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 
-import { SlideItemComponent } from './slide-item.component';
+import { SlideItem } from "./slide-item.component";
 
-describe('SlideItemComponent', () => {
-  let component: SlideItemComponent;
-  let fixture: ComponentFixture<SlideItemComponent>;
+describe("SlideItem", () => {
+  let component: SlideItem;
+  let fixture: ComponentFixture<SlideItem>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SlideItemComponent ]
-    })
-    .compileComponents();
+      declarations: [SlideItem],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SlideItemComponent);
+    fixture = TestBed.createComponent(SlideItem);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
