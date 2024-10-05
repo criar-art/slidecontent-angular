@@ -1,6 +1,20 @@
 {
   "name": "slidecontent-angular",
-  "version": "1.5.1",
+  "version": "1.5.2",
+  "author": "lucasferreiralimax (https://github.com/lucasferreiralimax)",
+  "repository": "https://github.com/criar-art/slidecontent-angular",
+  "bugs": {
+    "url": "https://github.com/criar-art/slidecontent-angular/issues"
+  },
+  "homepage": "https://slidecontent-angularjs.web.app",
+  "keywords": [
+    "angular",
+    "components",
+    "slide",
+    "slide-content",
+    "slide-item",
+    "ui"
+  ],
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0",
