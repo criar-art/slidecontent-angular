@@ -1,13 +1,14 @@
 {
   "name": "slidecontent-angular",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --configuration=pt",
     "build": "ng build",
     "build:module": "ng build slidecontent-angular",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "publish": "cd dist/slidecontent-angular && npm run publish"
   },
   "private": true,
   "dependencies": {
