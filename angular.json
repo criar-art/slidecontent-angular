@@ -38,11 +38,12 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/slidecontent-angular",
+            "outputPath": {
+              "base": "dist/slidecontent-angular"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
             "localize": true,
             "i18nMissingTranslation": "error",
             "polyfills": [
@@ -58,7 +59,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -113,9 +115,7 @@
               ]
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true

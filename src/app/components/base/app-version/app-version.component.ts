@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import pkg from '../../../../../package.json';
 
 @Component({
-  selector: 'app-version',
-  templateUrl: './app-version.component.html',
-  styleUrls: ['./app-version.component.scss']
+    selector: 'app-version',
+    templateUrl: './app-version.component.html',
+    styleUrls: ['./app-version.component.scss'],
+    standalone: false
 })
 export class AppVersionComponent implements OnInit {
 

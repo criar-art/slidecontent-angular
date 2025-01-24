@@ -12,9 +12,10 @@ import { takeWhile } from "rxjs/operators";
 import Hammer from 'hammerjs';
 
 @Component({
-  selector: "slide-content",
-  templateUrl: "./slide-content.component.html",
-  styleUrls: ["./slide-content.component.scss"],
+    selector: "slide-content",
+    templateUrl: "./slide-content.component.html",
+    styleUrls: ["./slide-content.component.scss"],
+    standalone: false
 })
 export class SlideContent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild("slideWrapper", { static: true })

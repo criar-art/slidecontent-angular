@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from "@angular/core";
 import * as uuid from "uuid";
 
 @Component({
-  selector: "slide-item",
-  templateUrl: "./slide-item.component.html",
-  styleUrls: ["./slide-item.component.scss"],
+    selector: "slide-item",
+    templateUrl: "./slide-item.component.html",
+    styleUrls: ["./slide-item.component.scss"],
+    standalone: false
 })
 export class SlideItem implements OnInit {
   @Input("actived") actived: boolean;

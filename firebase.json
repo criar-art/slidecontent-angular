@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/slidecontent-angular",
+    "public": "dist/slidecontent-angular/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

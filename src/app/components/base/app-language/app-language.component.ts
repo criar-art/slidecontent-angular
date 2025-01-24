@@ -3,9 +3,10 @@ import { LanguageService } from '../../../services/language.service';
 import { LocationStrategy } from '@angular/common';
 
 @Component({
-  selector: 'app-language',
-  templateUrl: './app-language.component.html',
-  styleUrl: './app-language.component.scss'
+    selector: 'app-language',
+    templateUrl: './app-language.component.html',
+    styleUrl: './app-language.component.scss',
+    standalone: false
 })
 export class AppLanguageComponent implements OnInit {
   languages = ['pt-BR', 'en-US', 'es-ES', 'fr-FR', 'ru-RU', 'zh-CN'];
