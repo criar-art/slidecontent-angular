@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Injectable, DOCUMENT } from '@angular/core';
+
 import { Inject } from '@angular/core';
 
 @Injectable({

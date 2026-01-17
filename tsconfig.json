@@ -16,7 +16,7 @@
     "declaration": false,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
       "slidecontent-angular": [
         "./dist/slidecontent-angular"
