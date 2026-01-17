@@ -1,4 +1,4 @@
-@import "../../../mixins/_responsive.scss";
+@use "../../../mixins/responsive" as *;
 
 .example {
   padding-bottom: 6rem;
