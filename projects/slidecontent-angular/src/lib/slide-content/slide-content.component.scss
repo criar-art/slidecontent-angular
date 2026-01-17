@@ -19,7 +19,8 @@
   }
   &.squared {
     border-radius: 0;
-    .slide-navigation .btn {
+    .slide-navigation .btn,
+    .slide-bullets .bullet {
       border-radius: 0;
     }
   }
