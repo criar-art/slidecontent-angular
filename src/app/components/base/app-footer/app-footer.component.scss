@@ -1,4 +1,4 @@
-@import "../../../../mixins/_responsive";
+@use "../../../../mixins/responsive" as *;
 
 .footer {
   padding: 3em 0;

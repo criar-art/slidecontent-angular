@@ -3,38 +3,39 @@
   [ngClass]="{ squared: squared, border: border, type }"
   (swipeleft)="nextHandler()"
   (swiperight)="prevHandler()"
->
+  >
   <div class="slide-contents" #slideWrapper (click)="openUrl($event)">
     <ng-content></ng-content>
   </div>
   @if (nav) {
-  <div class="slide-navigation">
-    <button
-      class="btn prev"
-      type="button"
-      name="button"
-      (click)="prevHandler()"
-      i18n="@@to_left"
-    >
+    <div class="slide-navigation">
+      <button
+        class="btn prev"
+        type="button"
+        name="button"
+        (click)="prevHandler()"
+        i18n="@@to_left"
+        >
       Ir para a esquerda
     </button>
-    <button
-      class="btn next"
-      type="button"
-      name="button"
-      (click)="nextHandler()"
-      i18n="@@to_right"
-    >
+      <button
+        class="btn next"
+        type="button"
+        name="button"
+        (click)="nextHandler()"
+        i18n="@@to_right"
+        >
       Ir para a direita
     </button>
-  </div>
-  <div class="slide-bullets">
-    <button
-      *ngFor="let slide of slides; let i = index"
-      class="bullet"
-      [class.active]="i === activeSlideIndex"
-      (click)="bulletHandler(i)"
-    ></button>
-  </div>
+    </div>
+    <div class="slide-bullets">
+      @for (slide of slides; track slide; let i = $index) {
+        <button
+          class="bullet"
+          [class.active]="i === activeSlideIndex"
+          (click)="bulletHandler(i)"
+        ></button>
+      }
+    </div>
   }
 </section>

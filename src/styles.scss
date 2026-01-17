@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./_reset.scss";
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@use "./reset";
 
 @font-face {
   font-family: 'Font Awesome 6 Free';
